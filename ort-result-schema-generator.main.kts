@@ -3,7 +3,7 @@
 @file:CompilerOptions("-jvm-target", "21")
 @file:DependsOn("com.github.ajalt.clikt:clikt-jvm:5.0.3")
 @file:DependsOn("com.github.victools:jsonschema-generator:4.37.0")
-@file:DependsOn("org.ossreviewtoolkit:model:54.0.0")
+@file:DependsOn("org.ossreviewtoolkit:model:55.0.0")
 
 import com.github.ajalt.clikt.core.CliktCommand
 import com.github.ajalt.clikt.core.context
