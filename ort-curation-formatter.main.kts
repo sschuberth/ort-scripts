@@ -2,7 +2,7 @@
 
 @file:CompilerOptions("-jvm-target", "21")
 @file:DependsOn("com.github.ajalt.clikt:clikt-jvm:5.0.3")
-@file:DependsOn("org.ossreviewtoolkit:model:71.2.0")
+@file:DependsOn("org.ossreviewtoolkit:model:71.3.0")
 
 import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
