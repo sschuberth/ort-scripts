@@ -5,6 +5,7 @@
 @file:DependsOn("org.ossreviewtoolkit:analyzer:71.5.0")
 
 import com.github.ajalt.clikt.core.CliktCommand
+import com.github.ajalt.clikt.core.Context
 import com.github.ajalt.clikt.core.context
 import com.github.ajalt.clikt.core.main
 import com.github.ajalt.clikt.output.MordantHelpFormatter
@@ -24,6 +25,8 @@ object : CliktCommand(name = __FILE__.name) {
             helpFormatter = { MordantHelpFormatter(context = it, "*", showDefaultValues = true) }
         }
     }
+
+    override fun help(context: Context) = "An example to show how to parse analyzer results."
 
     override fun run() {
         val ortResult = ortResultFile.readValue<OrtResult>()
