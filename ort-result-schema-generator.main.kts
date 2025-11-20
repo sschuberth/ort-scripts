@@ -6,6 +6,7 @@
 @file:DependsOn("org.ossreviewtoolkit:model:71.5.0")
 
 import com.github.ajalt.clikt.core.CliktCommand
+import com.github.ajalt.clikt.core.Context
 import com.github.ajalt.clikt.core.context
 import com.github.ajalt.clikt.core.main
 import com.github.ajalt.clikt.output.MordantHelpFormatter
@@ -28,6 +29,8 @@ object : CliktCommand(name = __FILE__.name) {
             helpFormatter = { MordantHelpFormatter(context = it, "*", showDefaultValues = true) }
         }
     }
+
+    override fun help(context: Context) = "Generate a JSON schema for the `OrtResult` class."
 
     override fun run() {
         val config = SchemaGeneratorConfigBuilder(schemaVersion, OptionPreset.PLAIN_JSON).build()

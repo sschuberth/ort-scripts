@@ -9,6 +9,7 @@ import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
 import com.fasterxml.jackson.module.kotlin.readValue
 
 import com.github.ajalt.clikt.core.CliktCommand
+import com.github.ajalt.clikt.core.Context
 import com.github.ajalt.clikt.core.context
 import com.github.ajalt.clikt.core.main
 import com.github.ajalt.clikt.output.MordantHelpFormatter
@@ -27,6 +28,8 @@ object : CliktCommand(name = __FILE__.name) {
             helpFormatter = { MordantHelpFormatter(context = it, "*", showDefaultValues = true) }
         }
     }
+
+    override fun help(context: Context) = "Normalize the format of package curation files."
 
     override fun run() {
         curationsDir.walk().filter { it.isFile && it.extension == "yml" }.forEach { file ->
