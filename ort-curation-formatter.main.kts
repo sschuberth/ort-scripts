@@ -1,7 +1,7 @@
 #!/usr/bin/env kotlin
 
 @file:CompilerOptions("-jvm-target", "21")
-@file:DependsOn("com.github.ajalt.clikt:clikt-jvm:5.0.3")
+@file:DependsOn("com.github.ajalt.clikt:clikt-jvm:5.1.0")
 @file:DependsOn("org.ossreviewtoolkit:model:76.0.0")
 
 import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator
