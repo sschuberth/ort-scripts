@@ -2,7 +2,7 @@
 
 @file:CompilerOptions("-jvm-target", "21")
 @file:DependsOn("com.github.ajalt.clikt:clikt-jvm:5.1.0")
-@file:DependsOn("org.ossreviewtoolkit:analyzer:76.0.0")
+@file:DependsOn("org.ossreviewtoolkit:analyzer:77.0.0")
 
 import com.github.ajalt.clikt.core.CliktCommand
 import com.github.ajalt.clikt.core.Context
