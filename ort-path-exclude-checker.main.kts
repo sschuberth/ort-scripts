@@ -2,7 +2,7 @@
 
 @file:CompilerOptions("-jvm-target", "21")
 @file:DependsOn("com.github.ajalt.clikt:clikt-jvm:5.1.0")
-@file:DependsOn("org.apache.logging.log4j:log4j-to-slf4j:2.25.3")
+@file:DependsOn("org.apache.logging.log4j:log4j-to-slf4j:2.25.4")
 @file:DependsOn("org.ossreviewtoolkit:model:83.0.0")
 @file:DependsOn("org.eclipse.jgit:org.eclipse.jgit:7.6.0.202603022253-r")
 
