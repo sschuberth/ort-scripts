@@ -20,4 +20,6 @@ jobs:
         distribution: temurin
         java-version: 21
     - name: Run Help
-      run: for i in *.main.kts; do ./$i --help; done
+      run: |
+        kotlin -version
+        for i in *.main.kts; do ./$i --help; done
