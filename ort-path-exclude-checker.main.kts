@@ -1,7 +1,7 @@
 #!/usr/bin/env kotlin
 
 @file:CompilerOptions("-jvm-target", "25")
-@file:DependsOn("com.github.ajalt.clikt:clikt-jvm:5.2.0")
+@file:DependsOn("com.github.ajalt.clikt:clikt-jvm:5.2.1")
 @file:DependsOn("org.apache.logging.log4j:log4j-to-slf4j:2.26.1")
 @file:DependsOn("org.ossreviewtoolkit:model:99.0.0")
 @file:DependsOn("org.eclipse.jgit:org.eclipse.jgit:7.8.1.202611041320-r")
